@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PAGE TITLE -->
+    <title>Pizza Paradise | Where Every Slice is a Taste of Heaven</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/images/pizza.png" type="image/x-icon">
+    <!-- STYLE LINK -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/449847b9b4.js" crossorigin="anonymous"></script>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <!-- || BACKGROUND VIDEO -->
+    <video autoplay loop muted plays-inline class="background-video">
+        <source src="images/Pizza - 123629.mp4" type="video/mp4">
+    </video>
+
+    <!-- || MENU BUTTON -->
+    <input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">
+
+    <!-- || HEADER -->
+    <header class="header">
+
+        <!-- || HEADER LOGO -->
+        <a class="header-logo" href="index.html">
+            <!-- <i class="fa-solid fa-pizza-slice"></i> -->
+            <img class="header-img" src="/images/pizza.png" alt="pizza slice">
+            <h1>Pizza Paradise</h1>
+        </a>
+
+        <!-- HEADER NAV -->
+        <nav class="header-nav">
+
+            <!-- || UL -->
+            <ul>
+                <li><a href="html/sign-up-your-rest.html">Sign-up your resturant</a></li>
+                <li><a href="html/driver.html">Become a driver</a></li>
+                <li><a href="html/login.html">Login</a></li>
+            </ul>
+
+            <!-- || SIGN-UP BUTTON -->
+            <button class="header-button">
+                Sign up
+            </button>                       
+        </nav>
+    </header>
+
+    <!-- || NARBAR -->
+    <nav class="navbar">
+
+        <!-- || MENU ITEMS -->
+        <a href="index.html" data-text="Home">Home</a>
+        <a href="html/about.html" data-text="About">About</a>
+        <a href="html/career.html" data-text="Career">Career</a>
+        <a href="html/driver.html" data-text="Become a driver">Become a driver</a>
+        <a href="html/partner.html" data-text="Partner with us">Partner with us</a>
+        <a href="html/help.html" data-text="Help">Help</a>
+
+        <!-- || BACKGROUND IMAGE -->
+        <div class="navbar-background-image"></div>
+    </nav>
+
+    <!-- || FIRST ARTICLE -->
+    <article class="article">
+        <h1>
+            Get <span class="article-special">30% OFF</span> your <br>
+            first order
+        </h1>
+        <p>
+            Find your favourite restaurant now
+        </p>
+
+        <!-- || LOCATION SEARCH BAR -->
+        <form action="#">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your address">
+            <button type="submit">Order</button>
+        </form>
+    </article>
+
+    <!-- || SECOND ARTICLE -->
+    <article class="sec">
+
+    </article>
+
+
+
+    
+    <!-- JavaScript -->
+
+    <script>
+        jQuery(function($)
+        {
+           var $navbar = $('.header');
+
+           $(window).scroll(function(event)
+           {
+            var $current = $(this).scrollTop();
+
+            if($current > 0)
+            {
+                $navbar.addClass('header-bgcolor-on-scroll');
+            }
+            else
+            {
+                $navbar.removeClass('header-bgcolor-on-scroll');
+            }
+           });
+        });
+    </script>
+</body>
+</html>
